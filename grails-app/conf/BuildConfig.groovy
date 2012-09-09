@@ -35,8 +35,8 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
 		runtime 'postgresql:postgresql:9.1-902.jdbc4'
-		runtime ("net.sf.ehcache:ehcache:1.6.1")
-    }
+
+   }
 
     plugins {
         runtime ":hibernate:$grailsVersion"
