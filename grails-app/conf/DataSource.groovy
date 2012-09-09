@@ -1,21 +1,23 @@
 dataSource {
 	pooled = true
-	driverClassName = "com.mysql.jdbc.Driver"
-	dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+	//dialect = 'com.e4net.hibernate.dialect.PostgreSQL91Dialect'
+	driverClassName = "org.postgresql.Driver"
+	username = "oxente"
+	password = "@oxentedev@"
+ 	
 }
 hibernate {
-	cache.use_second_level_cache = true
-	cache.use_query_cache = true
-	cache.provider_class = 'net.sf.ehcache.hibernate.EhCacheProvider'
+	cache.use_second_level_cache=true
+	cache.use_query_cache=true
+    cache.provider_class='net.sf.ehcache.hibernate.EhCacheRegionFactory'
 }
 // environment specific settings
 environments {
 	development {
 		dataSource {
 			dbCreate = "create" // one of 'create', 'create-drop','update'
-			url = "jdbc:mysql://localhost/gestor_dev"
-			username = "root"
-			password = "root"
+			url= "jdbc:postgresql://localhost:5432/oxente_dev"
+			
 		}
 		hibernate {
 			show_sql = true
@@ -24,17 +26,13 @@ environments {
 	test {
 		dataSource {
 			dbCreate = "create-drop" // one of 'create', 'create-drop','update'
-			url = "jdbc:mysql://localhost/gestor_test"
-			username = "root"
-			password = "root"
+			url= "jdbc:postgresql://localhost:5432/oxente_test"
 		}
 	}
 	production {
 		dataSource {
 			dbCreate = "update"
-			url = "jdbc:mysql://mysql-oxentegestor.jelastic.servint.net/oxente_dev"
-			username = "root"
-			password = "1KqBFYYA0U"
+			url= "jdbc:postgresql://localhost:5432/oxente_prod"
 		}
 	}
 }

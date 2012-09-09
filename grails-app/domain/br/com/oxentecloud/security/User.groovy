@@ -15,9 +15,11 @@ class User {
 		username blank: false, unique: true
 		password blank: false
 	}
-
+		
 	static mapping = {
+		table 'users'
 		password column: '`password`'
+		
 	}
 
 	Set<Role> getAuthorities() {
