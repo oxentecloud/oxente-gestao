@@ -1,6 +1,6 @@
 dataSource {
 	pooled = true
-	//dialect = 'com.e4net.hibernate.dialect.PostgreSQL91Dialect'
+	dialect = "org.hibernate.dialect.PostgreSQLDialect"
 	driverClassName = "org.postgresql.Driver"
 	username = "oxente"
 	password = "@oxentedev@"
@@ -9,7 +9,7 @@ dataSource {
 hibernate {
 	cache.use_second_level_cache=true
 	cache.use_query_cache=true
-    cache.provider_class='net.sf.ehcache.hibernate.EhCacheRegionFactory'
+    cache.provider_class='org.hibernate.cache.EhCacheProvider' 
 }
 // environment specific settings
 environments {
