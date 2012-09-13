@@ -1,8 +1,7 @@
 $(document).ready(function(){
     
     // Colorpicker and datepicker
-    $('#cp1, #cp2').colorpicker(); 
-    $('#dp1, #dp2').datepicker();
+	//$('#dp1, #dp2').datepicker();
     
     // Form Validation
     $("#register_form").validate({

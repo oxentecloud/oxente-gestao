@@ -1,8 +1,9 @@
 import org.springframework.context.annotation.DependsOn;
 
 modules = {
+	/*
     application {
-		resource url: 'js/jquery.min.js'
+		dependsOn 'jquery'
 		resource url: 'js/bootstrap.min.js'
 		resource url: 'js/imperio.general.js'
 		resource url: 'js/imperio.dashboard.js'
@@ -46,7 +47,7 @@ modules = {
 		
 		
 	}
-	
+	*/
 }
 
 

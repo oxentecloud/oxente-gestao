@@ -1,9 +1,8 @@
 package br.com.oxentecloud.financeiro
 
-class Conta {
+class FormaPagamento {
 	
 	String descricao
-	
 
     static constraints = {
     }

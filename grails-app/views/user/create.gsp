@@ -6,8 +6,6 @@
 <g:set var="entityName"	value="${message(code: 'user.label', default: 'Usuário')}" />
 <title><g:message code="default.create.label" args="[entityName]" /></title>
 
-	<r:require module="jquery"/>
-	<r:layoutResources/>			
 </head>
 <body>
 
@@ -44,12 +42,12 @@
 				</div>
 			</div>
 		</div>
-		
-		 <r:require module="form" />
-	     <r:require module="alert" />
-		
 
-		<r:layoutResources/>			
+<g:javascript src="jquery.validate.min.js"/>
+<g:javascript src="imperio.forms.js"/>
+<g:javascript src="jquery.noty.js"/>
+<g:javascript src="noty.theme.js"/>
+<g:javascript src="top.js"/>				
 		
 		<g:hasErrors bean="${userInstance}">
 									

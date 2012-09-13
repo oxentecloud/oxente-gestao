@@ -1,10 +1,7 @@
 package br.com.oxentecloud.financeiro
 
-class Conta {
+class TipoDocumento {
 	
 	String descricao
-	
 
-    static constraints = {
-    }
 }

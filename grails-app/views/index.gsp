@@ -1,10 +1,14 @@
 <!doctype html>
 <html>
 <head>
-<meta name="layout" content="main" />
-<title>Welcome to Grails</title>
-
-	<r:layoutResources />
+	<meta name="layout" content="main" />
+	<title>Home Oxente Gestão</title>
+	
+	<g:javascript src="imperio.dashboard.js" />
+	
+	<g:javascript src="jquery.flot.min.js"/>
+	<g:javascript src="jquery.flot.resize.min.js"/>
+	
 </head>
 <body>
 	<div class="span9" id="content">
@@ -158,8 +162,6 @@
 	<script type="text/javascript" src="js/imperio.general.js"></script>
 	-->
 	
-	<r:require module="application" />	
-	<r:require module="index" />
 	<!-- Explorer canvas, for IE6-8 support of canvas elements -->
 	<!--[if lt IE 9]>
 	    <script src="js/excanvas.min.js"></script>
@@ -169,8 +171,6 @@
 	<script type="text/javascript" src="js/jquery.flot.resize.min.js"></script>
 	<script type="text/javascript" src="js/imperio.dashboard.js"></script>
       -->
-
-	<r:layoutResources />
 
 </body>
 </html>
